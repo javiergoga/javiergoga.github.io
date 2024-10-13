@@ -1,84 +1,120 @@
+/* General Body Styles */
 body {
-  padding: 0px;
+  padding: 0;
   margin: 0;
   border: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   box-sizing: border-box;
 }
+
+/* Header with Fullscreen Background Image */
 header {
-  height: 100vh;
-  width: 100vw;
+  height: 100vh; /* Fullscreen height */
+  width: 100vw; /* Fullscreen width */
   background-color: rgb(0, 0, 0);
   display: flex;
-  position: relative;
   align-items: center;
   justify-content: center;
   background-image: url("img/gif_portada.gif"); /* Ruta de la imagen */
-  background-size: cover;
+  background-size: cover; /* Make sure the image covers the entire screen */
   background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0;
-  transform: scale(1.1);
-  transition: opacity 2s ease, transform 2s ease;
+  background-repeat: no-repeat; /* No repetition of the background image */
+  margin: 0; /* Remove any margin around the header */
+  padding: 0; /* Remove padding */
+  opacity: 1; /* Full opacity for the background image */
+  z-index: 1; /* Layer it below the main content */
 }
 
-h3 {
-  color: rgb(0, 0, 0);
-  position: fixed;
-  z-index: 1000;
+.textoEscrito {
+  width: clamp(200px, 80vw, 650px);
+  z-index: 2; /* Ensure text is above the background image */
+  position: relative; /* Keep text floating over the image */
 }
+
+/* Button to Scroll Back Up */
 .volver-arriba {
   position: fixed;
   top: 20px;
   left: 20px;
-  text-decoration: none; /* Elimina el subrayado del enlace */
+  text-decoration: none;
   color: aliceblue;
-  z-index: 1000; /* Asegura que el texto esté por encima de otros elementos */
+  z-index: 1000;
 }
 
 .volver-arriba h3 {
-  margin: 0; /* Elimina el margen por defecto del h3 */
+  margin: 0;
   padding: 10px;
   text-align: left;
-}
-h1 {
-  color: aliceblue;
-  font-size: clamp(12px, 14vw, 80px);
-  font-family: "Pinyon Script", cursive;
+  color: rgb(0, 0, 0);
 }
 
-.textoEscrito {
-  width: clamp(200px, 55vw, 650px);
-}
+/* Section Styles for the Main Content */
 .seccion01 {
-  height: 100vh;
-  width: 70vw;
+  height: auto;
+  width: 85vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.separador01 {
-  height: 100px;
+  padding: 2vh 2vw; /* Espacio superior/inferior y lateral */
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 2;
 }
 
 article {
-  font-size: clamp(px, 4vw, 25px);
-  word-wrap: break-word; /* Ajusta el texto para que cambie de línea automáticamente */
-  word-break: break-all;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5vw;
+  word-wrap: break-word;
+}
+
+h2 {
+  font-size: clamp(1rem, 8vw, 3rem);
   text-align: center;
 }
 
 .fechaBoda {
-  width: 400px;
+  width: clamp(200px, 60vw, 370px);
+  padding: 10px;
+}
+h4 {
+  width: 100%; /* Asegúrate de que ocupe el ancho completo */
+  max-width: 80%; /* Limita el ancho del párrafo */
+  word-break: normal;
+  overflow-wrap: break-word;
+  font-size: clamp(1.2rem, 3vw, 1.5rem); /* Corrige aquí */
+  text-align: center;
 }
 
 p {
+  width: 100%; /* Asegúrate de que ocupe el ancho completo */
+  max-width: 75%; /* Limita el ancho del párrafo */
   word-break: normal;
-  overflow-wrap: normal;
+  overflow-wrap: break-word;
+  font-size: clamp(1rem, 3vw, 1.1rem); /* Corrige aquí */
+  text-align: justify;
+  padding: 2vh;
+}
+
+.mi-formulario {
+  width: 70vw; /* 80% del ancho de la ventana */
+  height: 70vh; /* 80% de la altura de la ventana */
+  border: none; /* Elimina el borde */
+  margin: 0 auto; /* Centra el iframe si es necesario */
+  display: block; /* Asegúrate de que se comporta como bloque */
+}
+
+/* Footer (if needed) */
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
 }
