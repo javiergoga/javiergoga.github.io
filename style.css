@@ -77,7 +77,7 @@ article {
 }
 
 h2 {
-  font-size: clamp(1rem, 8vw, 3rem);
+  font-size: clamp(1.5rem, 7vw, 3rem);
   text-align: center;
 }
 
@@ -87,7 +87,7 @@ h2 {
 }
 h4 {
   width: 100%; /* Asegúrate de que ocupe el ancho completo */
-  max-width: 80%; /* Limita el ancho del párrafo */
+  max-width: 90%; /* Limita el ancho del párrafo */
   word-break: normal;
   overflow-wrap: break-word;
   font-size: clamp(1.2rem, 3vw, 1.5rem); /* Corrige aquí */
@@ -95,21 +95,29 @@ h4 {
 }
 
 p {
-  width: 100%; /* Asegúrate de que ocupe el ancho completo */
-  max-width: 75%; /* Limita el ancho del párrafo */
+  width: 90%; /* Asegúrate de que ocupe el ancho completo */
+  max-width: 700px; /* Limita el ancho del párrafo */
   word-break: normal;
   overflow-wrap: break-word;
   font-size: clamp(1rem, 3vw, 1.1rem); /* Corrige aquí */
   text-align: justify;
-  padding: 2vh;
+  padding: 5vh;
 }
 
 .mi-formulario {
-  width: 70vw; /* 80% del ancho de la ventana */
-  height: 70vh; /* 80% de la altura de la ventana */
+  width: 100%; /* Asegúrate de que use todo el ancho disponible */
+  max-width: 700px; /* Limita el ancho máximo en pantallas grandes */
+  height: 70vh; /* Mantiene la altura en porcentaje de la ventana */
   border: none; /* Elimina el borde */
-  margin: 0 auto; /* Centra el iframe si es necesario */
-  display: block; /* Asegúrate de que se comporta como bloque */
+  margin: 0 auto; /* Centra el iframe */
+  display: block; /* Asegúrate de que se comporte como bloque */
+  overflow: scroll; /* Muestra las barras de desplazamiento siempre que sea necesario */
+}
+
+@media (max-width: 600px) {
+  .mi-formulario {
+    height: 90vh; /* Aumenta la altura en pantallas más pequeñas */
+  }
 }
 
 /* Footer (if needed) */
