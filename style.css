@@ -126,7 +126,7 @@ footer {
 
 .scroll-indicator {
   position: absolute;
-  bottom: 100px;
+  bottom: 140px;
   left: 50%;
   transform: translateX(-50%);
   font-size: 68px;
