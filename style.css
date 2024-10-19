@@ -1,4 +1,3 @@
-/* General Body Styles */
 body {
   padding: 0;
   margin: 0;
@@ -11,7 +10,6 @@ body {
   box-sizing: border-box;
 }
 
-/* Header with Fullscreen Background Image */
 header {
   height: 100vh;
   width: 100vw;
@@ -36,7 +34,6 @@ header {
   position: relative;
 }
 
-/* Button to Scroll Back Up */
 .volver-arriba {
   position: fixed;
   top: 20px;
@@ -53,14 +50,13 @@ header {
   color: rgb(0, 0, 0);
 }
 
-/* Section Styles for the Main Content */
 .seccion01 {
   height: auto;
   width: 85vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2vh 2vw; /* Espacio superior/inferior y lateral */
+  padding: 2vh 2vw;
   margin-top: 2vh;
   margin-bottom: 2vh;
   background-color: #fff;
@@ -87,32 +83,32 @@ h2 {
   padding: 10px;
 }
 h4 {
-  width: 100%; /* Asegúrate de que ocupe el ancho completo */
-  max-width: 90%; /* Limita el ancho del párrafo */
+  width: 100%;
+  max-width: 90%;
   word-break: normal;
   overflow-wrap: break-word;
-  font-size: clamp(1.4rem, 3vw, 1.5rem); /* Corrige aquí */
+  font-size: clamp(1.4rem, 3vw, 1.5rem);
   text-align: center;
 }
 
 p {
-  width: 90%; /* Asegúrate de que ocupe el ancho completo */
-  max-width: 700px; /* Limita el ancho del párrafo */
+  width: 90%;
+  max-width: 700px;
   word-break: normal;
   overflow-wrap: break-word;
-  font-size: clamp(1rem, 3vw, 1.1rem); /* Corrige aquí */
+  font-size: clamp(1rem, 3vw, 1.1rem);
   text-align: justify;
   padding: 2vh;
 }
 
 .mi-formulario {
-  width: 100%; /* Asegúrate de que use todo el ancho disponible */
-  max-width: 700px; /* Limita el ancho máximo en pantallas grandes */
-  height: 70vh; /* Mantiene la altura en porcentaje de la ventana */
-  border: none; /* Elimina el borde */
-  margin: 0 auto; /* Centra el iframe */
-  display: block; /* Asegúrate de que se comporte como bloque */
-  overflow: scroll; /* Muestra las barras de desplazamiento siempre que sea necesario */
+  width: 100%;
+  max-width: 700px;
+  height: 70vh;
+  border: none;
+  margin: 0 auto;
+  display: block;
+  overflow: scroll;
 }
 
 @media (max-width: 600px) {
@@ -130,40 +126,39 @@ footer {
 
 .scroll-indicator {
   position: absolute;
-  bottom: 20px; /* Cerca de la parte inferior */
+  bottom: 100px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 68px; /* Tamaño más grande de la flecha */
-  color: white; /* Flecha de color blanco */
-  opacity: 0; /* Inicialmente oculta */
-  transition: opacity 0.8s ease-in-out; /* Suaviza la aparición */
-  animation: bounce 2s infinite; /* Animación de rebote */
+  font-size: 68px;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+  animation: bounce 2s infinite;
 }
 
-/* Animación de rebote */
 @keyframes bounce {
   0%,
   20%,
   50%,
   80%,
   100% {
-    transform: translateX(-50%) translateY(0); /* Posición original */
+    transform: translateX(-50%) translateY(0);
   }
   50% {
-    transform: translateX(-50%) translateY(10px); /* Rebota hacia abajo */
+    transform: translateX(-50%) translateY(10px);
   }
   50% {
-    transform: translateX(-50%) translateY(5px); /* Rebota ligeramente hacia arriba */
+    transform: translateX(-50%) translateY(5px);
   }
 }
 
 .custom-link {
-  text-decoration: none; /* Elimina el subrayado */
-  color: #377cd0; /* Escoge el color que prefieras */
+  text-decoration: none;
+  color: #377cd0;
   font-weight: bold;
 }
 
 .custom-link:hover {
-  color: #0056b3; /* Opcional: Cambia el color al pasar el ratón por encima */
+  color: #0056b3;
 }
 
