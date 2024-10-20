@@ -1,12 +1,10 @@
-window.onload = function () {
+document.addEventListener("DOMContentLoaded", function () {
   const header = document.querySelector("header");
   requestAnimationFrame(() => {
     header.style.opacity = "1";
     header.style.transform = "scale(1)";
   });
-};
 
-document.addEventListener("DOMContentLoaded", function () {
   setTimeout(function () {
     document.querySelector(".scroll-indicator").style.opacity = "1";
   }, 8500);
@@ -14,17 +12,16 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", function () {
     document.querySelector(".scroll-indicator").style.opacity = "0";
   });
+
+  // Parte en frances
+  const userLang = navigator.language || navigator.userLanguage;
+
+  if (userLang.includes("fr")) {
+    translateToFrench();
+    changeImagesForFrance();
+    changeFormForFrance();
+  }
 });
-
-// Parte en Frances
-
-const userLang = navigator.language || navigator.userLanguage;
-
-if (userLang.startsWith("fr")) {
-  translateToFrench();
-  changeImagesForFrance();
-  changeFormForFrance();
-}
 
 function translateToFrench() {
   document.querySelector("h2").innerHTML = "Vous êtes invités à notre mariage!";
@@ -43,9 +40,4 @@ function translateToFrench() {
 function changeImagesForFrance() {
   document.querySelector(".textoEscrito").src = "img/gif_titulo_fr.gif";
   document.querySelector(".fechaBoda").src = "img/fecha_boda_fr.png";
-}
-
-function changeFormForFrance() {
-  document.querySelector(".mi-formulario").src =
-    "https://docs.google.com/forms/d/e/FORMULARIO_EN_FRANCES/viewform?embedded=true";
 }
