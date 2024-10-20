@@ -33,7 +33,7 @@ function translateToFrench() {
     Sada, le matin, lors d'une petite cérémonie civile simple.<br><br>
     🍽️🥂 Ensuite, nous vous invitons à nous rejoindre au restaurant 
     <a href="https://g.co/kgs/Sibrbz2" class="custom-link">Árbore da Veira</a> 
-    pour un excellent repas en bonne compagnie.<br><br>
+    , dans le parc "Monte de San Pedro", à La Corogne, pour un excellent repas en bonne compagnie.<br><br>
     🙌📱 Merci de confirmer votre présence dès que possible via le formulaire ou par WhatsApp. Nous vous confirmerons les horaires exacts plus près de la date.<br><br>`;
 }
 
