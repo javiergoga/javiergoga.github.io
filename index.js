@@ -32,7 +32,7 @@ function translateToFrench() {
     <a href="https://maps.app.goo.gl/7upc7TdpXHuT461G7" class="custom-link">Salle du Conseil Municipal de l'Hôtel de Ville</a>,
     Sada, à 12h00.<br><br>
     🍽️🥂 Ensuite, nous vous invitons à nous rejoindre au restaurant 
-    <a href="https://g.co/kgs/Sibrbz2" class="custom-link">Árbore da Veira</a> 
+    <a href="https://maps.app.goo.gl/nfvAgVujHdyFBeU48" class="custom-link">Árbore da Veira</a> 
     à 14h00, dans le parc "Monte de San Pedro", à La Corogne, pour un excellent repas en bonne compagnie.<br><br>
     🙌📱 Merci de confirmer votre présence dès que possible via le formulaire ou par WhatsApp. Nous vous confirmerons les horaires exacts plus près de la date.<br><br>`;
 }
